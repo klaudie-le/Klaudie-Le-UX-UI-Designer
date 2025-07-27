@@ -81,10 +81,10 @@ h2 {
   letter-spacing: var(--letterspacing);
 }
 h2,
-h3,
 #Footer-text-me,
 #Footer-email-select,
-#Footer-phone-select {
+#Footer-phone-select,
+h3:not(.P2-sub-title-1, .P2-sub-title-2, .P2-sub-title-3) {
   animation: text-appear both;
   animation-timeline: view(70% 1%);
   animation-range: entry 1 cover 5vh;
@@ -94,7 +94,11 @@ p,
 .Portfolio-sub-title,
 .About-sub-title,
 .Portfolio-sub-title-highlight,
-.About-sub-title-highlight {
+.About-sub-title-highlight:not(
+    .P2-first-card,
+    .P2-second-card,
+    .P2-third-card
+  ) {
   animation: text-appear both;
   animation-timeline: view(60% 10%);
   animation-range: entry 60 cover 30vh;
@@ -169,17 +173,6 @@ nav > a {
   0% {
     opacity: O;
     transform: translateY(-30px) scale(0.9);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px) scale(1);
-  }
-}
-
-@keyframes fade-up {
-  0% {
-    opacity: O;
-    transform: translateY(30px) scale(0.9);
   }
   100% {
     opacity: 1;
@@ -292,7 +285,6 @@ nav > a {
 .P2-first-card,
 .P2-second-card,
 .P2-third-card {
-  animation: none;
   position: sticky;
   top: 0;
   padding: 2.6rem 8rem;
@@ -301,7 +293,6 @@ nav > a {
   border-radius: var(--border-radius);
   width: 65%;
   margin-bottom: 10rem;
-
   box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
     0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
     0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
@@ -339,6 +330,12 @@ nav > a {
   font-weight: var(--thin);
   text-transform: none;
   font-size: var(--sub-title);
+}
+#Portfolio-gallery-row,
+.Portfolio-item-1-wide {
+  animation: text-appear both;
+  animation-timeline: view(70% 1%);
+  animation-range: entry 1 cover 5vh;
 }
 
 #Portfolio-gallery-row {
