@@ -8,9 +8,9 @@
   </head>
   <body>
     <header>
-      <a href="#" id="home-button">Klaudie Lê</a>
+      <a href="#homebutton" id="home-button">Klaudie Lê</a>
       <nav id="navigation-buttons">
-        <a href="#">Portfolio</a>
+        <a class="Portfolio-nav" href="#Portfolio-title">Portfolio</a>
         <svg
           width="34"
           height="44"
@@ -20,9 +20,11 @@
         >
           <path d="M33.0312 1L0.968751 43" stroke="#A1A1A1" />
         </svg>
-        <a href="#">O mně</a>
+        <a class="About-me-nav" href="About-me-title">O mně</a>
       </nav>
-      <button class="contact-button">Kontaktujte mě</button>
+      <a href="mailto:klaudie.le@seznam.cz"
+        ><button class="contact-button">Kontaktujte mě</button></a
+      >
     </header>
     <main>
       <img
@@ -171,7 +173,9 @@
                 fill="#F7F7F7"
               />
             </svg>
-            <span id="Contact-email">klaudie.le@seznam.cz</span>
+            <a href="mailto:klaudie.le@seznam.cz" id="Contact-email"
+              >klaudie.le@seznam.cz</a
+            >
           </div>
           <div id="Footer-phone-select">
             <svg
@@ -191,7 +195,9 @@
               />
             </svg>
 
-            <span id="Contact-phone">(+420) 704 754 080</span>
+            <a href="tel:(+420) 704 754 080" id="Contact-phone"
+              >(+420) 704 754 080</a
+            >
           </div>
         </div>
       </footer>
