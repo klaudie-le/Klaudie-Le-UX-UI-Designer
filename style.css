@@ -137,8 +137,10 @@ nav {
   align-items: center;
   animation: fade-down 1.25s ease-out;
 }
-a {
+a,
+button {
   text-decoration: none;
+  cursor: pointer;
 }
 nav > a {
   font-size: 0.95rem;
