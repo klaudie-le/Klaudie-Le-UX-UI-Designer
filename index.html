@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <span id="home-button">Klaudie Lê</span>
+      <a href="#" id="home-button">Klaudie Lê</a>
       <nav id="navigation-buttons">
         <a href="#">Portfolio</a>
         <svg
@@ -25,13 +25,18 @@
       <button class="contact-button">Kontaktujte mě</button>
     </header>
     <main>
+      <img
+        class="astronaut-hero-img"
+        src="Astronaut-hero.webp"
+        alt="úvodní fotografie, na kterém stojí astronaut z boku se záběrem na obličej, nasvícený červeným a modrým světlem, sklání hlavu"
+      />
       <div id="hero-section">
         <h1 id="hero-title">UX — UI</h1>
         <h3 id="hero-description">
           <p id="hero-text">
             <span
               >Designér, který lidem usnadňuje rozhodnutí a značkám
-              i jednotlivcům pomáhá vyniknout <br /><span
+              i jednotlivcům pomáhá vyniknout <br /><span
                 id="hero-text-highlight"
                 >— funkčně i vizuálně</span
               ></span
@@ -43,14 +48,14 @@
         </span>
       </div>
 
-      <section id="P2-section-2-intro">
+      <section id="P2-section-intro">
         <h2>
-          <span class="P2-main-tittle">Co dělám jinak</span>
+          <span class="P2-main-title">Co dělám jinak</span>
           <br />
-          <span class="P2-main-tittle-highlight">— a proč to oceníte</span>
+          <span class="P2-main-title-highlight">— a proč to oceníte</span>
         </h2>
 
-        <div class="P2-cards-all-style">
+        <div class="P2-cards-container">
           <div class="P2-first-card">
             <span>
               <h3>Design, který nejen vypadá - ale funguje</h3>
@@ -85,6 +90,112 @@
           </div>
         </div>
       </section>
+
+      <section>
+        <h2 id="Portfolio-title">Portfolio</h2>
+        <span id="Portfolio-section">
+          <span class="Portfolio-sub-title-selection">
+            <span class="Portfolio-sub-title">Provedu Vás procesem </span><br />
+            <span class="Portfolio-sub-title-highlight"
+              >— a vysvětlím proč to funguje</span
+            ></span
+          >
+        </span>
+        <div id="Portfolio-gallery">
+          <span class="Portfolio-item-1-wide"></span>
+        </div>
+        <div id="Portfolio-gallery-row">
+          <span class="Portfolio-item-2-tall"></span>
+          <span class="Portfolio-item-3-tallest"></span>
+        </div>
+      </section>
+
+      <section>
+        <h2 id="About-me-title">O mně</h2>
+        <span id="About-section">
+          <span class="About-sub-title-selection">
+            <span class="About-sub-title">Jmenuji se Klaudie Lê</span><br />
+            <span class="About-sub-title-highlight"
+              >— ta, kterou hledáte</span
+            ></span
+          >
+        </span>
+        <img
+          class="profile-picture-img"
+          src="profile-picture-le.webp"
+          alt=" portrétová fotografie autorky stránky v červené halence s tmavými vlasy, který ji vítr rozhazuje a dívá se do kamery"
+        />
+        <div id="About-text-container">
+          <span id="About-first-paragraph">
+            <h3>Designér s citem pro uživatele i strategii</h3>
+            <p id="about-me-text-1">
+              Kromě UX/UI designu se věnuji fotografii, skládáním hudby a práci
+              s hlasem jako vocal coach. Díky těmto zkušenostem dokážu vnímat
+              různé pohledy, pracovat empaticky a kreativně řešit problémy
+              <br />
+              — což se naplno odráží i v mém designérském přístupu.
+            </p></span
+          >
+          <span id="About-second-paragraph"
+            ><h3>Mezioborový přístup vedoucí k inovacím</h3>
+            <p id="about-me-text-2">
+              Věřím v mezioborovost, zvědavost a poctivý proces. Neustálé
+              objevování nových směrů mě posouvá k lepším a inovativnějším
+              výsledkům. Možná trochu renesanční přístup života <br />
+              — a právě ten mě baví.
+            </p></span
+          >
+        </div>
+      </section>
+
+      <h2 id="End-stay-connected-text">Zůstaňme ve spojení!</h2>
+      <footer>
+        <div id="Footer-container">
+          <h2 id="Footer-contact-info">
+            Máte projekt? Pojďme ho posunout dál.
+          </h2>
+          <span id="Footer-text-me">Napište mi, odpověď ode mě máte brzy.</span>
+          <div id="Footer-email-select">
+            <svg
+              id="Footer-email-icon"
+              width="28"
+              height="28"
+              viewBox="0 0 28 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M26.1625 6.447L15.1148 15.596C14.8008 15.8561 14.4059 15.9984 13.9983 15.9984C13.5906 15.9984 13.1957 15.8561 12.8818 15.596L1.83925 6.447C1.78 6.62535 1.74986 6.81207 1.75 7V21C1.75 21.4641 1.93437 21.9092 2.26256 22.2374C2.59075 22.5656 3.03587 22.75 3.5 22.75H24.5C24.9641 22.75 25.4092 22.5656 25.7374 22.2374C26.0656 21.9092 26.25 21.4641 26.25 21V7C26.2507 6.81217 26.2212 6.62544 26.1625 6.447ZM3.5 3.5H24.5C25.4283 3.5 26.3185 3.86875 26.9749 4.52513C27.6313 5.1815 28 6.07174 28 7V21C28 21.9283 27.6313 22.8185 26.9749 23.4749C26.3185 24.1313 25.4283 24.5 24.5 24.5H3.5C2.57174 24.5 1.6815 24.1313 1.02513 23.4749C0.368749 22.8185 0 21.9283 0 21V7C0 6.07174 0.368749 5.1815 1.02513 4.52513C1.6815 3.86875 2.57174 3.5 3.5 3.5ZM3.1325 5.25L12.8905 13.3053C13.203 13.5634 13.5955 13.705 14.0008 13.706C14.4062 13.7069 14.7993 13.5672 15.113 13.3105L24.969 5.25H3.1325Z"
+                fill="#F7F7F7"
+              />
+            </svg>
+            <span id="Contact-email">klaudie.le@seznam.cz</span>
+          </div>
+          <div id="Footer-phone-select">
+            <svg
+              id="Footer-phone-icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.8571 21.5563C12.4935 21.3947 12.1355 21.2208 11.7838 21.0348C10.0315 20.0443 8.42223 18.8197 7.00045 17.3948C5.1549 15.6576 3.63907 13.6007 2.52629 11.3235C1.93101 10.0997 1.5288 8.79118 1.33395 7.44433C1.06974 6.08401 1.22012 4.67569 1.76562 3.40183C2.10279 2.8535 2.50879 2.35183 2.97312 1.90966C3.16154 1.69831 3.39075 1.52724 3.64698 1.40675C3.90321 1.28625 4.18116 1.21882 4.46412 1.2085C5.05329 1.29716 5.58645 1.60516 5.95512 2.07416C6.76012 2.969 7.62345 3.774 8.47395 4.6245C8.80879 4.9115 9.01762 5.31866 9.05495 5.7585C9.04095 6.12833 8.89862 6.48183 8.65245 6.75833C8.37012 7.1165 8.02712 7.44433 7.69929 7.78733C7.50163 7.97841 7.35047 8.21231 7.25742 8.471C7.16438 8.7297 7.13195 9.00629 7.16262 9.2795C7.36843 9.91831 7.72036 10.5003 8.19045 10.9793C8.75745 11.7552 9.32329 12.4727 9.96379 13.2322C11.1158 14.5627 12.4812 15.6923 14.004 16.5747C14.2146 16.7334 14.4635 16.8336 14.7254 16.865C14.9873 16.8963 15.2528 16.8577 15.495 16.7532C16.0019 16.4709 16.4517 16.0966 16.8215 15.6495C17.1423 15.2587 17.602 15.0078 18.1036 14.9483C18.5505 14.9717 18.9716 15.163 19.282 15.485C19.6833 15.828 20.0263 16.2317 20.3996 16.6038C20.7718 16.9772 21.0705 17.2455 21.3831 17.5885C21.758 17.9191 22.1107 18.2722 22.4413 18.6478C22.698 18.9792 22.8193 19.3945 22.7843 19.811C22.6513 20.3095 22.3642 20.7534 21.9641 21.0792C21.4016 21.6646 20.718 22.1201 19.9611 22.4139C19.2042 22.7077 18.3923 22.8327 17.5821 22.7802C15.9419 22.6871 14.3362 22.2712 12.8571 21.5563Z"
+                stroke="#F7F7F7"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+              />
+            </svg>
+
+            <span id="Contact-phone">(+420) 704 754 080</span>
+          </div>
+        </div>
+      </footer>
+      <span></span>
     </main>
   </body>
 </html>
