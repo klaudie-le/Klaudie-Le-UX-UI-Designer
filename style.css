@@ -30,7 +30,7 @@
 }
 html {
   scroll-behavior: smooth;
-  transition: scroll 0.7s ease-in-out;
+  transition: scroll 1s ease-in-out;
 }
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -68,6 +68,7 @@ h1 {
   padding-top: 14.5rem;
   margin-left: 19rem;
   word-spacing: 2.25px;
+  animation: text-appear 1.25s ease-out;
 }
 h2 {
   margin-top: 20rem;
@@ -77,6 +78,36 @@ h2 {
   font-weight: var(--semi-bold);
   line-height: var(--line-height-title-section);
   letter-spacing: var(--letterspacing);
+}
+h2,
+h3,
+#Footer-text-me,
+#Footer-email-select,
+#Footer-phone-select {
+  animation: text-appear both;
+  animation-timeline: view(70% 1%);
+  animation-range: entry 1 cover 5vh;
+}
+
+p,
+.Portfolio-sub-title,
+.About-sub-title,
+.Portfolio-sub-title-highlight,
+.About-sub-title-highlight {
+  animation: text-appear both;
+  animation-timeline: view(60% 10%);
+  animation-range: entry 60 cover 30vh;
+}
+
+@keyframes text-appear {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(3);
+  }
 }
 
 h3 {
@@ -99,6 +130,7 @@ nav {
   justify-content: space-evenly;
   letter-spacing: var(--letterspacing-small);
   align-items: center;
+  animation: fade-down 1.25s ease-out;
 }
 a {
   text-decoration: none;
@@ -116,6 +148,7 @@ nav > a {
   margin-left: 1rem;
   font-size: 1.2rem;
   font-weight: var(--semi-bold);
+  animation: fade-down 1.25s ease-out;
 }
 
 .contact-button {
@@ -128,8 +161,35 @@ nav > a {
   letter-spacing: var(--letterspacing-small);
   font-weight: 590;
   margin-right: 1rem;
+  animation: fade-down 1.25s ease-out;
 }
 
+@keyframes fade-down {
+  0% {
+    opacity: O;
+    transform: translateY(-30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: O;
+    transform: translateY(30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+#hero-description,
+#hero-services {
+  animation: text-appear 2.25s ease-out;
+}
 #hero-description {
   position: relative;
   max-width: 36ch;
@@ -138,6 +198,7 @@ nav > a {
 }
 
 #hero-text {
+  animation: none;
   color: var(--white);
   text-align: left;
   display: flex;
@@ -176,6 +237,7 @@ nav > a {
   z-index: 1;
   margin-left: 7rem;
   margin-top: 7rem;
+  width: 45%;
 }
 
 #about-me-text-1,
@@ -199,9 +261,10 @@ nav > a {
   padding-left: 7rem;
 }
 
-#Portfolio-title,
-#About-me-title {
+#Portfolio,
+#O-mne {
   text-transform: uppercase;
+  margin-left: 13rem;
 }
 
 #End-stay-connected-text,
@@ -228,6 +291,7 @@ nav > a {
 .P2-first-card,
 .P2-second-card,
 .P2-third-card {
+  animation: none;
   position: sticky;
   top: 0;
   padding: 2.6rem 8rem;
@@ -311,9 +375,10 @@ nav > a {
 
 #About-text-container {
   position: relative;
-  margin-top: 27.4rem;
-  margin-left: 22.3rem;
-  padding: 9.7rem 4.5rem;
+  margin-top: 29.4rem;
+  margin-left: 26.3rem;
+  padding: 13.9rem 4.5rem;
+  padding-right: 6rem;
   background-color: var(--ligher-blue);
   border-radius: var(--border-radius);
   max-width: 764px;
@@ -325,8 +390,6 @@ nav > a {
 #Footer-container {
   border-top-left-radius: var(--border-radius);
   border-top-right-radius: var(--border-radius);
-  padding: 3rem 0rem;
-  padding-left: 1rem;
   padding-bottom: 11rem;
   display: flex;
   flex-direction: column;
@@ -334,7 +397,7 @@ nav > a {
   color: var(--white);
   text-align: left;
   background-color: var(--black);
-  min-height: 40rem;
+  min-height: 35rem;
 }
 
 #Footer-contact-info {
