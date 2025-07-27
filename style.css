@@ -52,6 +52,7 @@ header {
   padding: 1rem 4rem;
   box-sizing: border-box;
   position: fixed;
+  z-index: 1;
   top: 0;
 }
 
@@ -243,7 +244,7 @@ nav > a {
 #about-me-text-1,
 #about-me-text-2 {
   margin-top: 2.7rem;
-  margin-left: 2rem;
+  margin-left: 2.7rem;
   line-height: 180%;
   font-size: var(--main-sub-content);
   text-align: left;
