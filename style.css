@@ -90,15 +90,12 @@ h3:not(.P2-sub-title-1, .P2-sub-title-2, .P2-sub-title-3) {
   animation-range: entry 1 cover 5vh;
 }
 
-p,
 .Portfolio-sub-title,
 .About-sub-title,
 .Portfolio-sub-title-highlight,
-.About-sub-title-highlight:not(
-    .P2-first-card,
-    .P2-second-card,
-    .P2-third-card
-  ) {
+.About-sub-title-highlight,
+#about-me-text-1,
+#about-me-text-2 {
   animation: text-appear both;
   animation-timeline: view(60% 10%);
   animation-range: entry 60 cover 30vh;
@@ -280,7 +277,6 @@ nav > a {
   margin-left: 10rem;
   max-width: 1100px;
   position: relative;
-  max-width: 50;
   left: 10rem;
 }
 
