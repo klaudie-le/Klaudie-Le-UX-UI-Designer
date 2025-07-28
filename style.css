@@ -405,6 +405,18 @@ nav > a {
   text-align: left;
   background-color: var(--black);
   min-height: 35rem;
+  animation: fade-up 1s ease-in;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: O;
+    transform: translateY(30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
 }
 
 #Footer-contact-info {
@@ -419,7 +431,7 @@ nav > a {
 
 #Footer-text-me {
   font-size: var(--main-sub-content);
-  padding-left: 11rem;
+  padding-left: 13.1rem;
   margin-bottom: 5rem;
 }
 
