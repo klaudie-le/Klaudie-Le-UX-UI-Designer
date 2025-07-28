@@ -145,13 +145,6 @@ nav > a {
   font-weight: 300;
   position: relative;
 }
-#home-button,
-nav > a {
-  background-color: var(--white);
-  backdrop-filter: blur(10px);
-  padding: 0.18rem;
-  border-radius: var(--border-radius);
-}
 
 #home-button {
   color: var(--black);
