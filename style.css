@@ -52,12 +52,12 @@ header {
   padding: 1rem 4rem;
   box-sizing: border-box;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
 }
 
 section {
-  margin: 10rem;
+  margin: 18rem;
   align-items: center;
   justify-content: center;
 }
@@ -73,7 +73,7 @@ h1 {
 }
 h2 {
   margin-top: 20rem;
-  margin-left: 4.5rem;
+  margin-left: -1rem;
   margin-bottom: 5rem;
   font-size: var(--title-section);
   font-weight: var(--semi-bold);
@@ -145,6 +145,13 @@ nav > a {
   font-weight: 300;
   position: relative;
 }
+#home-button,
+nav > a {
+  background-color: var(--white);
+  backdrop-filter: blur(10px);
+  padding: 0.18rem;
+  border-radius: var(--border-radius);
+}
 
 #home-button {
   color: var(--black);
@@ -152,7 +159,14 @@ nav > a {
   margin-left: 1rem;
   font-size: 1.2rem;
   font-weight: var(--semi-bold);
+
   animation: fade-down 1.25s ease-out;
+}
+
+@media (width>980px) {
+  #home-button {
+    mix-blend-mode: difference;
+  }
 }
 
 .contact-button {
@@ -257,7 +271,8 @@ nav > a {
 #Portfolio,
 #O-mne {
   text-transform: uppercase;
-  margin-left: 13rem;
+  display: flex;
+  justify-content: flex-start;
 }
 
 #End-stay-connected-text,
@@ -312,7 +327,6 @@ nav > a {
 #About-section {
   display: flex;
   justify-content: flex-end;
-  margin-right: 15rem;
 }
 
 .Portfolio-sub-title,
@@ -347,7 +361,7 @@ nav > a {
 .Portfolio-item-1-wide {
   display: flex;
   justify-content: flex-start;
-  margin-left: -2.24rem;
+  margin-left: -2.3rem;
   margin-top: 8rem;
   background-color: var(--gray);
   max-width: 1100px;
@@ -355,7 +369,7 @@ nav > a {
   border-radius: var(--border-radius);
 }
 .Portfolio-item-2-tall {
-  margin-left: -7.12rem;
+  margin-left: -8rem;
   background-color: var(--gray);
   width: 45%;
   height: 678px;
