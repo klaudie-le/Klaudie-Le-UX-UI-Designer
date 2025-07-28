@@ -291,9 +291,9 @@ nav > a {
 .P2-third-card {
   position: sticky;
   top: 0;
-  padding: 2.6rem 8rem;
+  padding: 3.2rem 8.3rem;
   padding-left: 6rem;
-  padding-bottom: 4rem;
+  padding-bottom: 4.5rem;
   border-radius: var(--border-radius);
   width: 65%;
   margin-bottom: 10rem;
@@ -346,8 +346,12 @@ nav > a {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  gap: 5rem;
-  padding: 4rem 5vw;
+  gap: 7rem;
+  padding: 9rem 1.75vw;
+}
+
+#Photo-gallery {
+  margin-bottom: -3rem;
 }
 
 .Portfolio-item-1-wide {
@@ -355,16 +359,17 @@ nav > a {
   justify-content: flex-start;
   margin-left: -2.3rem;
   margin-top: 8rem;
+
   background-color: var(--gray);
   max-width: 1100px;
   height: 600px;
   border-radius: var(--border-radius);
 }
 .Portfolio-item-2-tall {
-  margin-left: -8rem;
+  margin-left: -4.4rem;
   background-color: var(--gray);
   width: 45%;
-  height: 678px;
+  height: 678x;
   border-radius: var(--border-radius);
 }
 
