@@ -40,9 +40,6 @@ body {
   letter-spacing: var(--letterspacing);
 }
 
-h2 {
-  scroll-margin-top: 8rem;
-}
 header {
   margin-top: 1rem;
   width: 100%;
@@ -72,8 +69,9 @@ h1 {
   animation: text-appear 1.25s ease-out;
 }
 h2 {
+  scroll-margin-top: 8rem;
   margin-top: 20rem;
-  margin-left: -1rem;
+  margin-left: 7rem;
   margin-bottom: 5rem;
   font-size: var(--title-section);
   font-weight: var(--semi-bold);
@@ -235,7 +233,7 @@ nav > a {
   border-radius: var(--border-radius);
   position: absolute;
   z-index: 1;
-  margin-left: 7rem;
+  margin-left: 0rem;
   margin-top: 7rem;
   width: 45%;
 }
@@ -320,6 +318,7 @@ nav > a {
 #About-section {
   display: flex;
   justify-content: flex-end;
+  margin-right: 5rem;
 }
 
 .Portfolio-sub-title,
@@ -379,7 +378,7 @@ nav > a {
 #About-text-container {
   position: relative;
   margin-top: 29.4rem;
-  margin-left: 26.3rem;
+  margin-left: 17.3rem;
   padding: 13.9rem 4.5rem;
   padding-right: 6rem;
   background-color: var(--ligher-blue);
