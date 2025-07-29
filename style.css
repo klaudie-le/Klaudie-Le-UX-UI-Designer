@@ -2,6 +2,7 @@
   --black: #382a2a;
   --gray: #676767;
   --white: #f7f7f7;
+  --white-transluscent: rgba(247, 247, 247, 0.95);
   --red: #d32e29;
 
   --ligher-blue: #e1f4ff;
@@ -41,7 +42,8 @@ body {
 }
 
 header {
-  margin-top: 1rem;
+  background-color: var(--white-transluscent);
+  border-bottom: solid 1px #e0e0e0;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -154,12 +156,6 @@ nav > a {
   animation: fade-down 1.25s ease-out;
 }
 
-@media (width>980px) {
-  #home-button {
-    mix-blend-mode: difference;
-  }
-}
-
 .contact-button {
   text-decoration: none;
   border: none;
@@ -222,6 +218,7 @@ nav > a {
 }
 
 .astronaut-hero-img {
+  background-image: url(Astronaut-hero.webp);
   border-radius: var(--border-radius);
   position: absolute;
   z-index: -1;
@@ -279,7 +276,6 @@ nav > a {
 }
 
 .P2-cards-container {
-  border: 2px solid green;
   margin-left: 10rem;
   max-width: 1100px;
   position: relative;
@@ -355,27 +351,32 @@ nav > a {
 }
 
 .Portfolio-item-1-wide {
+  background-image: url(Prace-wide.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
   justify-content: flex-start;
   margin-left: -2.3rem;
   margin-top: 8rem;
-
-  background-color: var(--gray);
   max-width: 1100px;
   height: 600px;
   border-radius: var(--border-radius);
 }
 .Portfolio-item-2-tall {
-  margin-left: -4.4rem;
-  background-color: var(--gray);
-  width: 45%;
-  height: 678x;
+  background-image: url(Prace-tall-2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 65%;
+  height: 678px;
   border-radius: var(--border-radius);
 }
 
 .Portfolio-item-3-tallest {
   background-color: var(--gray);
-  width: 60%;
+  width: 35%;
   height: 1320px;
   border-radius: var(--border-radius);
 }
